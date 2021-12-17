@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>Mata Mosquito</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="game.js"></script>
+
+</head>
+
+<body onresize="gameScreenSize()">
+
+	<div class="panel">
+
+		<div class="lifes">
+			<img id="l1" src="imagens/coracao_cheio.png">
+			<img id="l2" src="imagens/coracao_cheio.png">
+			<img id="l3" src="imagens/coracao_cheio.png">
+		</div>
+
+		<div class="stopwatch">
+			Tempo restante: <span id="stopwatch"></span>
+		</div>
+	</div>
+
+	<script>
+		document.getElementById('stopwatch').innerHTML = time
+
+		var createGnat = setInterval(function(){
+			addRandomGnat()
+		}, timeGnat)
+
+	</script>
+
+</body>	
+
+</html>
