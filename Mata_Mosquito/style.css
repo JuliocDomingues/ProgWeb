@@ -6,7 +6,9 @@ html{
 body{
 	background-image: url(imagens/bg.jpg); 
 	background-repeat: no-repeat;
-	height: 100%;
+	background-position: center center;
+	background-attachment: fixed;
+	background-size: cover;
 }
 
 .mosquitoImg1{
